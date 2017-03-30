@@ -1,0 +1,55 @@
+---
+---
+$main-color: blue;
+$accent-color: #99B898;
+
+$serif: 'Martel', serif; 
+$sans-serif: 'Roboto', sans-serif;  
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.u-material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.u-transition { transition: all .4s ease; }
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content }
+  &:-moz-placeholder { @content }
+  &::-moz-placeholder { @content }
+  &:-ms-input-placeholder { @content }
+}
+
+.u-wrapper {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@import "form";
+@import "button";
+@import "prose";
+@import "smartlinks";
+@import "tags";
+@import "card";
+@import "custom";
+
